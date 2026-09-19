@@ -1,0 +1,23 @@
+/* aiguide.se brand fonts — SF Pro (sans) + New York (serif), self-hosted variable woff2.
+   Copied from the Menodi brand set so the two look like one family. Self-hosted on purpose:
+   the satellite network rule forbids pulling assets cross-domain from menodi.se, and a
+   network-level request would fingerprint the sites as related. */
+
+@font-face{font-family:'SF Pro';src:url('/fonts/SF-Pro-var.woff2') format('woff2');font-weight:300 700;font-style:normal;font-display:swap;}
+@font-face{font-family:'SF Pro';src:url('/fonts/SF-Pro-Italic-var.woff2') format('woff2');font-weight:300 700;font-style:italic;font-display:swap;}
+@font-face{font-family:'New York';src:url('/fonts/NewYork-var.woff2') format('woff2');font-weight:400 1000;font-style:normal;font-display:swap;}
+@font-face{font-family:'New York';src:url('/fonts/NewYork-Italic-var.woff2') format('woff2');font-weight:400 1000;font-style:italic;font-display:swap;}
+
+/* Metric-matched fallbacks: the local font that renders before the brand font arrives takes up
+   the same width, so the swap does not re-wrap the page. Ratios measured at text sizes
+   (16-18px). Apple devices keep -apple-system ahead of the Arial fallback. */
+@font-face{font-family:'SF Pro Fallback Roboto';src:local('Roboto');size-adjust:106.0%;ascent-override:89.8%;descent-override:22.8%;line-gap-override:0%}
+@font-face{font-family:'SF Pro Fallback Segoe';src:local('Segoe UI');size-adjust:106.0%;ascent-override:89.8%;descent-override:22.8%;line-gap-override:0%}
+@font-face{font-family:'SF Pro Fallback Arial';src:local('Arial'),local('Helvetica Neue'),local('Helvetica');size-adjust:105.4%;ascent-override:90.3%;descent-override:22.9%;line-gap-override:0%}
+@font-face{font-family:'New York Fallback Georgia';src:local('Georgia');size-adjust:106.5%;ascent-override:89.4%;descent-override:22.6%;line-gap-override:0%}
+@font-face{font-family:'New York Fallback Times';src:local('Times New Roman'),local('Times');size-adjust:115.5%;ascent-override:82.4%;descent-override:20.9%;line-gap-override:0%}
+
+:root{
+  --sans:'SF Pro','SF Pro Fallback Roboto','SF Pro Fallback Segoe',-apple-system,BlinkMacSystemFont,'SF Pro Fallback Arial','Segoe UI',system-ui,sans-serif;
+  --serif:'New York','New York Fallback Georgia','New York Fallback Times',ui-serif,Georgia,'Times New Roman',serif;
+}
