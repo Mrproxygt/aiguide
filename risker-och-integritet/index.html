@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Risker och integritet — vad du bör tänka på med AI | aiguide.se</title>
+<meta name="description" content="Hallucinationer, bias, personuppgifter, upphovsrätt, läckage och skenande kostnader. Vad riskerna faktiskt består i och vad du konkret bör göra åt dem.">
+<link rel="canonical" href="https://aiguide.se/risker-och-integritet/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" href="/fonts/SF-Pro-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Till innehållet</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Aiguide – startsida"><img src="/assets/logo.svg" alt="Aiguide" width="87" height="26"></a>
+    <nav class="site-nav" aria-label="Huvudmeny">
+      <a href="/">Start</a>
+      <a href="/vad-ar-ai/">Vad är AI</a>
+      <a href="/kom-igang/">Kom igång</a>
+      <a href="/guider/" aria-current="page">Guider</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+
+    <section class="hero">
+      <p class="eyebrow">Guide</p>
+      <h1>Risker och integritet</h1>
+      <p class="lede">
+        Riskerna med AI är sällan spektakulära. De är vardagliga: ett påhittat svar som går vidare,
+        en uppgift som hamnat där den inte borde, en kostnad ingen hade koll på.
+      </p>
+    </section>
+
+    <h2>Den största risken: att svaret låter rätt</h2>
+    <p>
+      En språkmodell formulerar sig lika säkert när den har rätt som när den har fel. Det finns
+      ingen tvekan i språket att lyssna efter, ingen markering som säger "detta gissade jag".
+      Därför är den vanligaste skadan inte ett uppenbart dåligt svar, utan ett trovärdigt felaktigt
+      svar som någon litat på.
+    </p>
+    <p>
+      Risken förstärks av något som kallas automationsbias: vi sänker garden när svaret kommer från
+      en maskin och är prydligt formulerat. Det gäller även erfarna människor.
+    </p>
+    <p>
+      <strong>Motmedlet är enkelt men måste vara en vana:</strong> allt som ska användas — siffror,
+      namn, datum, lagtext, citat, källor — kontrolleras någon annanstans. Behandla AI-text som ett
+      utkast från en okänd kollega. Bra att utgå från, aldrig att citera utan kontroll.
+    </p>
+
+    <h2>Fördomar och snedvridning</h2>
+    <p>
+      En modell speglar sitt träningsmaterial. Är vissa grupper, yrken eller perspektiv
+      underrepresenterade där, blir resultatet därefter — inte för att någon bestämt det, utan för
+      att mönstret ser ut så. Det märks tydligast när modellen får fylla i luckor själv: beskriv
+      "en läkare" eller "en städare" och se vilka antaganden som följer med.
+    </p>
+    <p>
+      Detta spelar störst roll när AI används för att bedöma människor — rekrytering, kredit,
+      försäkring. I sådana sammanhang bör en människa fatta beslutet, och någon bör kunna förklara
+      varför.
+    </p>
+
+    <h2>Personuppgifter och data</h2>
+    <p>
+      När du skriver till ett AI-verktyg skickar du texten till någon annans dator. Fråga därför
+      alltid: <em>var behandlas uppgifterna, hur länge sparas de, används de för att träna
+      modellen, och finns ett personuppgiftsbiträdesavtal?</em> Svaren skiljer sig kraftigt mellan
+      leverantörer och mellan deras olika nivåer.
+    </p>
+
+    <div class="note">
+      <p>
+        <strong>Praxis som håller.</strong> Utgå från att allt du skriver kan komma att läsas av
+        någon annan. Mata aldrig in personnummer, kontouppgifter, lösenord, hälsouppgifter eller
+        uppgifter om andra som de inte samtyckt till. Behöver du hjälp med en sådan text: byt ut
+        namn mot platshållare och stryk detaljerna först.
+      </p>
+    </div>
+
+    <p>
+      Kör du en öppen modell på egen hårdvara upphör den här frågan — uppgifterna lämnar aldrig din
+      miljö. Det är den främsta anledningen till att organisationer väljer den vägen, till priset
+      av att själva ansvara för driften.
+    </p>
+
+    <h2>Upphovsrätt och ansvar</h2>
+    <p>
+      Att ett verktyg kan producera en text betyder inte att du fritt får använda den. Modeller är
+      tränade på material som kan vara upphovsrättsskyddat, och reglerna skiljer sig mellan
+      länder och ändras fortfarande. För bilder och längre textstycken är det klokt att inte
+      publicera kommersiellt utan att veta vad som gäller.
+    </p>
+    <p>
+      Ansvaret ligger hos dig, inte hos verktyget. Att "AI:n skrev det" håller inte som förklaring
+      — varken mot en kund, en myndighet eller i domstol.
+    </p>
+
+    <h2>Kostnader som skenar</h2>
+    <p>
+      De flesta verktyg har en gratisnivå och ett antal betalda nivåer, ofta med rörlig
+      kostnad per användning. Det går snabbt att koppla upp ett automatiserat flöde som anropar en
+      modell tusentals gånger i timmen, och kostnaden syns först på fakturan. Sätt ett tak och en
+      bevakning innan du automatiserar något, inte efteråt.
+    </p>
+
+    <h2>Säkerhet och bedrägerier</h2>
+    <ul>
+      <li><strong>Röst- och videokloner.</strong> Det går idag att härma en röst övertygande nog att
+          lura en anhörig eller en medarbetare. Kom överens om ett lösenord i familjen eller på
+          jobbet för ovanliga förfrågningar.</li>
+      <li><strong>Övertalande text i stor skala.</strong> Nätfiske och bedrägerier har blivit
+          billigare att producera och svårare att upptäcka på dålig svenska.</li>
+      <li><strong>Instruktioner inbäddade i material.</strong> Lägger du in en extern text eller
+          webbsida i ett AI-verktyg kan den innehålla dolda instruktioner som påverkar vad
+          verktyget gör. Var försiktig med innehåll från okända källor.</li>
+    </ul>
+
+    <h2>Tre saker att bestämma innan du börjar</h2>
+    <ol>
+      <li><strong>Vad får matas in?</strong> Skriv ner det svart på vitt, så slipper var och en gissa.</li>
+      <li><strong>Vad måste granskas av en människa?</strong> Allt som går till kund, myndighet eller
+          påverkar någon annan.</li>
+      <li><strong>Vem ansvarar?</strong> Utan ett namn blir svaret "ingen", och det är där misstagen
+          landar.</li>
+    </ol>
+
+    <p><a class="btn" href="/skala-upp/">Nästa del: Skala upp</a></p>
+
+    <p class="updated">Senast uppdaterad: 19 september 2026. Regler och villkor på området ändras fortfarande — kontrollera vad som gäller för din verksamhet.</p>
+
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>
+      <strong>aiguide.se</strong> — gratis grundkurs i AI. Oberoende, utan affiliatelänkar.
+    </p>
+    <p class="foot-mark" aria-hidden="true">aiguide</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olika AI-modeller — vilka finns och hur väljer man? | aiguide.se</title>
+<meta name="description" content="Vad en AI-modell är, vilka modellfamiljer som finns, vilka skillnader som faktiskt spelar roll i praktiken, och hur du väljer utan att jaga benchmarks.">
+<link rel="canonical" href="https://aiguide.se/ai-modeller/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" href="/fonts/SF-Pro-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Till innehållet</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Aiguide – startsida"><img src="/assets/logo.svg" alt="Aiguide" width="87" height="26"></a>
+    <nav class="site-nav" aria-label="Huvudmeny">
+      <a href="/">Start</a>
+      <a href="/vad-ar-ai/">Vad är AI</a>
+      <a href="/kom-igang/">Kom igång</a>
+      <a href="/guider/" aria-current="page">Guider</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+
+    <section class="hero">
+      <p class="eyebrow">Guide</p>
+      <h1>Olika AI-modeller</h1>
+      <p class="lede">
+        Det finns ingen "bästa" modell. Det finns modeller som passar olika bra för olika saker —
+        och skillnaderna som faktiskt betyder något i vardagen är sällan de som mäts i topplistor.
+      </p>
+    </section>
+
+    <h2>Vad en modell är</h2>
+    <p>
+      När folk säger "jag använder AI" menar de oftast ett <em>verktyg</em> — ChatGPT, Claude,
+      Gemini. Verktyget är en app. <strong>Modellen</strong> är motorn inuti: den tränade
+      språkmodell som gör själva arbetet. Ett och samma verktyg kan byta modell, och samma modell
+      kan finnas i flera olika verktyg.
+    </p>
+    <p>
+      Det är därför "vilken är bäst?" är fel fråga. Rätt fråga är vilken modell som passar din
+      uppgift, och om verktyget omkring den fungerar för dig.
+    </p>
+
+    <h2>De stora familjerna</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Familj</th><th>Bakom</th><th>Kännetecken</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ChatGPT</td>
+            <td>OpenAI</td>
+            <td>Störst användarbas, brett ekosystem av funktioner och integrationer</td>
+          </tr>
+          <tr>
+            <td>Claude</td>
+            <td>Anthropic</td>
+            <td>Ofta omtalad för långa dokument och försiktighet med osäkra svar</td>
+          </tr>
+          <tr>
+            <td>Gemini</td>
+            <td>Google</td>
+            <td>Nära sammankopplad med Googles övriga tjänster</td>
+          </tr>
+          <tr>
+            <td>Copilot</td>
+            <td>Microsoft</td>
+            <td>Inbyggd i Windows och Office snarare än ett eget verktyg</td>
+          </tr>
+          <tr>
+            <td>Llama, Mistral m.fl.</td>
+            <td>Meta, Mistral AI m.fl.</td>
+            <td>Öppna modeller du kan köra själv, på egen hårdvara eller hos en leverantör</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Listan är inte komplett och ändras snabbt. Poängen är inte att lära sig namnen, utan att se
+      att det finns två läger: de stängda modellerna hos en leverantör, och de öppna du kan köra
+      själv. Det valet har konsekvenser som är större än vilken modell som svarar bäst just nu.
+    </p>
+
+    <h2>Skillnader som faktiskt spelar roll</h2>
+
+    <h3>Hur mycket text den kan hantera samtidigt</h3>
+    <p>
+      Det så kallade kontextfönstret avgör hur långt material du kan ge modellen i ett svep — en
+      hel rapport, en lång avtalsmall, en bok. Är det för litet måste du dela upp arbetet, och
+      modellen tappar sammanhanget mellan delarna.
+    </p>
+
+    <h3>Om den kan hantera mer än text</h3>
+    <p>
+      Alla modeller läser text. En del kan också tolka bilder, ljud eller video, eller själva skapa
+      sådant. Ska du få hjälp med ett fotografi, ett diagram eller en ljudfil är detta avgörande.
+    </p>
+
+    <h3>Om den får söka på nätet och använda verktyg</h3>
+    <p>
+      En modell som bara kan sin träningsdata kan inte svara på vad som hände i förra veckan. En
+      modell med webbsökning kan det — men blir samtidigt mindre förutsägbar. Fråga alltid om
+      sökning är påslaget, så du vet vad du får.
+    </p>
+
+    <h3>Var uppgifterna tar vägen</h3>
+    <p>
+      Detta är den skillnad som oftast förbises och som betyder mest för många organisationer. Var
+      behandlas uppgifterna, lagras de, används de för träning, och finns det ett avtal? En modell
+      du kör själv på egen hårdvara löser frågan på ett sätt som en molntjänst aldrig kan — till
+      priset av att du själv ansvarar för driften.
+    </p>
+
+    <h3>Storlek, hastighet och pris</h3>
+    <p>
+      Leverantörer erbjuder ofta flera nivåer av samma modell: en liten och snabb, och en stor och
+      långsam men skarpare. För att sammanfatta en kort text räcker den lilla. För att resonera
+      igenom ett komplicerat problem gör den stora märkbar skillnad. Att betala för den största
+      modellen till alla uppgifter är ett vanligt och onödigt slöseri.
+    </p>
+
+    <h2>Hur du väljer utan att jaga benchmarks</h2>
+    <p>
+      Topplistor mäter saker som sällan motsvarar din uppgift, och de är inaktuella nästan direkt.
+      Gör istället så här:
+    </p>
+    <ol>
+      <li><strong>Utgå från dina egna uppgifter.</strong> Plocka fram tre typiska saker du vill ha hjälp med.</li>
+      <li><strong>Prova två eller tre verktyg på dem.</strong> Gratisnivåerna räcker.</li>
+      <li><strong>Bedöm resultatet själv.</strong> Du är experten på din uppgift — det är den enda relevanta mätningen.</li>
+      <li><strong>Väg in det som inte syns i svaret:</strong> var uppgifterna hamnar, vad det kostar, hur lätt det är att byta.</li>
+    </ol>
+
+    <div class="note">
+      <p>
+        <strong>Undvik att låsa in dig.</strong> Bygg inte rutiner som bara fungerar i ett verktyg
+        om du inte måste. Modeller byts ut, priser ändras och villkor skrivs om — och den leverantör
+        som passar bäst idag är inte säkert den som passar bäst om ett år. Håll dina texter och
+        instruktioner i egna filer, inte bara i chatten.
+      </p>
+    </div>
+
+    <h2>Det bästa ändras snabbt</h2>
+    <p>
+      Rangordningen mellan modeller har ändrats flera gånger de senaste åren och kommer att göra
+      det igen. Det är därför den här sidan inte rankar dem. Lär dig istället vad du ska titta
+      efter — kontextfönster, multimodalitet, verktyg, databehandling, kostnad — så klarar du att
+      bedöma nästa modell också, utan att läsa en enda topplista.
+    </p>
+
+    <p><a class="btn" href="/risker-och-integritet/">Nästa del: Risker och integritet</a></p>
+
+    <p class="updated">Senast uppdaterad: 19 september 2026. Modellutbudet ändras löpande — kontrollera aktuella villkor hos respektive leverantör.</p>
+
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>
+      <strong>aiguide.se</strong> — gratis grundkurs i AI. Oberoende, utan affiliatelänkar.
+    </p>
+    <p class="foot-mark" aria-hidden="true">aiguide</p>
+  </div>
+</footer>
+
+</body>
+</html>

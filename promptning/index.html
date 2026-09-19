@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Promptning — att prata med AI så du får bra svar | aiguide.se</title>
+<meta name="description" content="Vad promptning är, vilka tekniker som faktiskt spelar roll, vanliga misstag och varför du får bättre svar av att säga vad som var fel än av att skriva om frågan.">
+<link rel="canonical" href="https://aiguide.se/promptning/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" href="/fonts/SF-Pro-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Till innehållet</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Aiguide – startsida"><img src="/assets/logo.svg" alt="Aiguide" width="87" height="26"></a>
+    <nav class="site-nav" aria-label="Huvudmeny">
+      <a href="/">Start</a>
+      <a href="/vad-ar-ai/">Vad är AI</a>
+      <a href="/kom-igang/">Kom igång</a>
+      <a href="/guider/" aria-current="page">Guider</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+
+    <section class="hero">
+      <p class="eyebrow">Guide</p>
+      <h1>Promptning</h1>
+      <p class="lede">
+        En prompt är bara det du skriver till modellen. Det finns inget hemligt knep — men det
+        finns ett fåtal vanor som gör stor skillnad, och ett vanligt misstag som gör allt sämre.
+      </p>
+    </section>
+
+    <h2>Grundidén</h2>
+    <p>
+      Modellen vet ingenting om dig, ditt ärende eller vad du ska ha svaret till. Den vet bara vad
+      du skriver. En bra prompt innehåller därför fyra saker: <strong>målet</strong>,
+      <strong>mottagaren</strong>, <strong>innehållet</strong> och <strong>formen</strong>.
+    </p>
+    <p>
+      Det låter mer komplicerat än det är. "Skriv ett svar till en kund" saknar alla fyra.
+      "Skriv ett vänligt men kort svar till en kund som klagat på sen leverans (mottagare), där vi
+      beklagar och erbjuder fri frakt nästa gång (innehåll), högst 100 ord (form)" har alla fyra —
+      och ger ett helt annat resultat.
+    </p>
+
+    <h2>Tekniker som spelar roll</h2>
+
+    <h3>Ge den ett sammanhang eller en roll</h3>
+    <p>
+      "Du är en erfaren ekonomijournalist som förklarar för en bred publik" förändrar ordval,
+      detaljnivå och vilka antaganden modellen gör. Det är inte magi — det styr vilken sorts text
+      som är mest sannolik, vilket är precis vad modellen letar efter.
+    </p>
+
+    <h3>Visa ett exempel</h3>
+    <p>
+      Det mest underskattade knepet. Ska du få tio rubriker i en viss stil? Ge två exempel på
+      stilen du vill ha. Modeller är mycket bättre på att härma ett mönster de ser än på att
+      tolka en beskrivning av samma mönster.
+    </p>
+
+    <h3>Be om flera alternativ</h3>
+    <p>
+      "Ge mig fem olika inledningar" är nästan alltid bättre än "skriv en inledning". Du får
+      variation, och det är lättare att peka på vad du gillar än att beskriva det från början.
+    </p>
+
+    <h3>Be om resonemanget, inte bara svaret</h3>
+    <p>
+      På uppgifter som kräver flera steg blir resultatet oftast bättre om du ber modellen visa hur
+      den resonerar innan den landar i ett svar. Då kan du också se var det gick fel — vilket är
+      hela poängen när du ska bedöma om svaret går att lita på.
+    </p>
+
+    <h3>Be om invändningar</h3>
+    <p>
+      Modeller instämmer ogärna i att något är dåligt. Frågar du "är det här en bra plan?" får du
+      beröm. Fråga istället: <em>"Vad är svagast i den här planen? Vad talar emot den?"</em> — då
+      får du den kritiska granskning du faktiskt ville ha.
+    </p>
+
+    <h3>Specificera formatet</h3>
+    <p>
+      Antal ord, punktlista eller löptext, tabell eller brödtext, vilken läsnivå. Utan det väljer
+      modellen själv, och den väljer ofta längre och mer formellt än du vill.
+    </p>
+
+    <h2>Misstaget de flesta gör</h2>
+    <div class="note">
+      <p>
+        <strong>Att börja om från början.</strong> Den vanligaste nybörjarvanan är att skriva en
+        helt ny, "bättre" fråga när svaret blev fel. Det ger sällan ett bättre resultat. Säg
+        istället vad som var fel med det du fick: <em>"För formellt. Skriv om det som om du
+        förklarade för en kollega."</em>
+      </p>
+      <p>
+        Modellen har hela samtalet framför sig. Att rätta den är därför effektivare än att börja
+        om — den vet redan vad den gjorde fel på.
+      </p>
+    </div>
+
+    <h2>Andra vanliga misstag</h2>
+    <ul>
+      <li><strong>Att anta att den minns.</strong> Byter du ämne börjar du bäst en ny konversation —
+          annars hänger gamla antaganden kvar.</li>
+      <li><strong>Att lita på detaljer.</strong> Siffror, namn och källor kan vara påhittade även i
+          ett svar som i övrigt är korrekt.</li>
+      <li><strong>Att ge upp efter ett försök.</strong> Tre rundor av justering är normalt, inte ett
+          tecken på att det inte fungerar.</li>
+      <li><strong>Att inte ge den materialet.</strong> Ska den utgå från ett dokument du har, klistra
+          in det. Den kan inte läsa dina tankar eller dina filer.</li>
+    </ul>
+
+    <h2>När promptning inte hjälper</h2>
+    <p>
+      Om du får samma felaktiga svar om och om igen, även när du är tydlig, är problemet oftast inte
+      prompten. Då är det något av detta:
+    </p>
+    <ul>
+      <li><strong>Uppgiften kräver kunskap modellen inte har</strong> — om en händelse, en intern
+          rutin eller ett dokument den inte fått.</li>
+      <li><strong>Uppgiften kräver ett svar som inte får vara fel.</strong> Då är modellen fel
+          verktyg, hur välformulerad prompten än är.</li>
+      <li><strong>Modellen är för liten för uppgiften.</strong> Enklare och snabbare modeller är
+          billigare men klarar sämre av långa resonemang. Se
+          <a href="/ai-modeller/">olika AI-modeller</a>.</li>
+    </ul>
+
+    <p><a class="btn" href="/ai-modeller/">Nästa del: Olika AI-modeller</a></p>
+
+    <p class="updated">Senast uppdaterad: 19 september 2026.</p>
+
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>
+      <strong>aiguide.se</strong> — gratis grundkurs i AI. Oberoende, utan affiliatelänkar.
+    </p>
+    <p class="foot-mark" aria-hidden="true">aiguide</p>
+  </div>
+</footer>
+
+</body>
+</html>
