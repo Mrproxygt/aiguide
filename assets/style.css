@@ -185,13 +185,12 @@ tbody tr:last-child td { border-bottom: 0; }
   color: var(--muted); font-size: .92rem;
 }
 .site-foot a { color: var(--muted); }
-.foot-mark {
-  font-family: var(--sans); font-weight: 560;
-  font-size: clamp(3rem, 13vw, 9.5rem);
-  line-height: .85; letter-spacing: -.06em;
-  color: var(--ink); opacity: .045;
-  margin: 2.25rem 0 0; user-select: none;
-}
+/* Oversized brand watermark. This is the real logo.svg, not typed text: an earlier pass set the
+   word in SF Pro, which is neither the brand's letterforms nor its Aiguide capitalisation, and
+   line-height:.85 pushed the g descender out of its line box. As an image it scales cleanly and
+   cannot re-wrap or clip. */
+.foot-mark { margin: 2.25rem 0 0; user-select: none; }
+.foot-mark img { display: block; width: min(100%, 560px); height: auto; opacity: .07; }
 
 .updated { font-size: .86rem; color: var(--muted); margin-top: 2.5rem; }
 
